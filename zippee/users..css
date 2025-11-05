@@ -1,0 +1,17 @@
+:root{
+  --bg:#f6fbff; --card:#fff; --accent:#007bff; --muted:#666;
+}
+html,body{height:100%;margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:#222}
+.users-root{display:flex;align-items:center;justify-content:center;padding:30px}
+.users-card{background:var(--card);border-radius:12px;padding:22px;max-width:720px;width:100%;box-shadow:0 8px 30px rgba(0,0,0,0.06);text-align:center}
+.users-card h1{margin:0 0 6px}
+.muted{color:var(--muted);font-size:0.95rem}
+.stats{display:flex;gap:18px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+.stat{min-width:150px;background:#f8f9ff;padding:12px;border-radius:8px;border:1px solid #eef4ff}
+.label{font-size:0.85rem;color:var(--muted)}
+.value{font-weight:700;font-size:1.4rem;margin-top:6px}
+.actions{display:flex;gap:12px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.alt{background:#6c757d}
+.note{margin-top:12px;color:var(--muted);font-size:0.9rem}
+@media(max-width:520px){.stats{flex-direction:column;align-items:center}.stat{width:100%;max-width:320px}}

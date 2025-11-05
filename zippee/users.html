@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zippee — Visitor Tracking</title>
+  <link rel="stylesheet" href="users..css">
+</head>
+<body>
+  <main class="users-root">
+    <section class="users-card">
+      <h1>Welcome to Zippee (Live Project)</h1>
+      <p class="muted">This page tracks unique users and daily visits. Admin: raviambersariya1@gmail.com</p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Total Unique Users</div>
+          <div id="totalUsers" class="value">--</div>
+        </div>
+        <div class="stat">
+          <div class="label">Today's Visits</div>
+          <div id="todayVisits" class="value">--</div>
+        </div>
+        <div class="stat">
+          <div class="label">Last Visit</div>
+          <div id="lastVisit" class="value">--</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a href="index.html" class="btn">Open Main Project</a>
+        <button id="notifyBtn" class="btn alt">Send Test Notification</button>
+      </div>
+
+      <p class="note">Automatic email requires server/Formspree/EmailJS endpoint. Edit users.js FORM_ENDPOINT.</p>
+    </section>
+  </main>
+
+  <script src="users.js"></script>
+</body>
+</html>
